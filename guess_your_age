@@ -4,13 +4,15 @@ print("Hello! I am going to guess your age!")
 
 name = input("What is your name?")
 
-While True:
+while True:
 	guess_age = random.randint(15,40)	
 	
 	user_age_answer = input(f" Are you {guess_age} years old? y/n")	
 	
-	if uswer_age_answer == "y":
+	if user_age_answer == "y":
 		print(f"Your name is {name} and you are {guess_age} years old")
+
+		break
 	
 	else:
 		print("Rats!")
