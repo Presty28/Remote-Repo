@@ -1,0 +1,14 @@
+import random
+
+print("Hello! I am going to guess your age!")
+
+name = input("What is your name?")
+
+While True:
+	random_age_guess = random.randint(15,40)
+	if input(f"Is {random_age_guess} your age? Y/N") == "Y":
+		print(f" Your name is {name} and your age is {input}")
+		return True
+	else:
+		print("Rats.")
+		return False
